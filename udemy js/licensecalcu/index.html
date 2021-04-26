@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>license eligible or not</title>
+</head>
+<body>
+    
+  
+    <p id="demo"></p>
+    <p id="demo1"></p>
+    <p id="demo2"></p>
+    <script>
+        const year=18;
+        const age=prompt("enter your age here for license your eligible or not to show")
+   
+         
+     
+      if(year<=age){
+         document.getElementById("demo").innerHTML="your eligible to get license";
+      }else{
+          document.getElementById("demo").innerHTML="you need to wait for  " + (year-age) +" years for your license test";
+      }
+    
+      
+      const day="monday";
+      switch(day){
+          case "monday":
+              document.getElementById("demo1").innerHTML="you are selected monday";
+              break;
+              case "tuesday":
+              document.getElementById("demo1").innerHTML="you are selected tuesday";
+              break;
+              
+
+          
+      }
+      if(day==="monday"){
+          document.getElementById("demo2").innerHTML="monday";
+
+
+      }else{
+        document.getElementById("demo2").innerHTML="nothing your are selected";
+      }
+       const x=20;
+       x > 19 ? console.log("hai"):console.log("hello");
+
+       const y=x<19 ? "hai people ": " hello people";  
+       
+       console.log(y);
+        
+       var z=30
+       if(z>x){
+           number="greater"
+       }else{
+            number="less"
+       }
+       console.log(number)
+
+       console.log(`i like to drink ${z>x ? "wine":"water"} `);
+
+       /////
+       const Ateam=(20+30+10)/3;
+       const Bteam=(30+40+10)/3;
+       if(Ateam<Bteam){
+           console.log("Bteam have highest score than Ateam ")
+        
+       } else if (Bteam<Ateam){
+console.log("Ateam have highest score than Bteam ")
+       }else{console.log("both team haave same score ")}
+
+       const Cteam=(40+50+10)/3;
+       const Dteam=(50+60+10)/3;
+       if(Dteam<Cteam){
+           console.log("Dteam have highest score than Cteam ")
+        
+       } else if (Cteam<Dteam){
+console.log("Cteam have highest score than Dteam ")
+       }else{console.log("both team haave same score ")}
+
+       const Eteam=(40+50+10)/3;
+       const Fteam=(50+60-10)/3;
+       if(Eteam<Fteam){
+           console.log("Dteam have highest score than Cteam ")
+        
+       } else if (Fteam<Eteam){
+console.log("Cteam have highest score than Dteam ")
+} else if (Fteam===Eteam){
+console.log("both team haave same score ")
+       }else{console.log("value don't match  ")}
+
+
+       </script>
+
+
+    
+</body>
+</html>
