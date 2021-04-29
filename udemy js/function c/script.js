@@ -65,3 +65,117 @@ function calcula(divid){
 }
 const value6=calcul(15,20);
 console.log(value6);
+
+////functions with if , else if and else
+ 
+/// we are doing about driving license
+
+function license(age){
+const ages=18;
+if(ages<age){
+    return `your able write license test `;
+}else{
+    return`we need to wait ${ages-age} year  `;
+}
+}
+ const years= license(12);
+ console.log(years);
+/// challenge #1(function);
+
+
+const avgdolpine=(a,b,c)=>{
+    return (a+b+c)/3;
+}
+const avgkoala=(a,b,c)=>{
+    return (a+b+c)/3;
+}
+const checkWinner=(a,b,c,d,f,g)=>{
+    const avgd=avgdolpine(a,b,c);
+    console.log(avgd);
+    const avgk=avgkoala(d,f,g);
+    console.log(avgk);
+   if(avgd>(avgk*2)){
+        return`dolpine score double than dolpine, the dolpine score ${avgd}`;
+
+    }else if((avgd*2)<avgk){
+        return` koala score double than dolpine, the koala score ${avgk}`;
+    }else{
+        return` both team not win`;
+    }
+}
+//example
+console.log(checkWinner(1,2,3,1,4,9));
+//test 1
+console.log(checkWinner(44,23,71,65,54,49));
+//test 2 
+console.log(checkWinner(85,54,41,23,34,27));
+
+
+
+
+
+///challenge#1 as per video
+
+const calcuAverage=(a,b,c)=>(a+b+c)/3;
+//test1
+const avgdolp=calcuAverage(44,23,71);
+console.log(avgdolp);
+const avgkoal=calcuAverage(65,54,49);
+console.log(avgkoal);
+const avgdolp1=calcuAverage(85,54,41);
+console.log(avgdolp1);
+const avgkoal1=calcuAverage(23,34,27);
+console.log(avgkoal1);
+const checkwinner=(avgdolp,avgkoal)=>{
+    if(avgdolp>(avgkoal*2)){
+        console.log(` dolpine win `);
+    }else if ((avgdolp*2)<avgkoal){
+console.log(` koala win `);
+    }else {
+        console.log( `both team  loose `);
+    }
+}
+console.log(checkwinner(46,56));
+console.log(checkwinner(60,28));
+
+
+/// arrays
+const friend=['ram','krishna','humanu'];
+console.log(friend);
+console.log(friend.length);
+console.log(friend[0]);
+friend[4]='ravana';
+console.log(friend);
+friend[3]='thanous';
+console.log(friend); 
+const listName=['host', 'ghost', 1990-1880, friend ,friend.length ,true];
+console.log(listName);
+const count=[1,2,3,4,5,6,7,8]
+function counts(a,b){
+   var add=a+b; 
+    return add;
+}
+console.log(counts(count[0],count[1]));
+function countsn(c,d){
+    return c+d;
+}
+console.log(countsn(count[5],count[6]));
+ const vName=['joker','ravan','thanous'];
+ // push add at end
+ vName.push('paste');
+ console.log(vName);
+ //unshift add at strating
+ vName.unshift('present');
+ console.log(vName);
+ //pop is use  to remove last element
+ vName.pop();
+ console.log(vName);
+ // shift is use to remove first element
+ vName.shift();
+ console.log(vName);
+ // indexof 
+ console.log(vName.indexOf('ravan'));
+ // include is use for if array element are there not
+ console.log(vName.includes('ravan'));
+ console.log(vName.includes('ram'));
+ 
