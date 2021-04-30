@@ -179,3 +179,72 @@ console.log(countsn(count[5],count[6]));
  console.log(vName.includes('ravan'));
  console.log(vName.includes('ram'));
  
+
+ // arrays challenge#2
+  function calcutip(bill){
+      if(bill>=50&&bill<=300){
+        return  bill*0.15;
+      }else{
+          return bill*0.2;
+      }
+  };
+  const bill=[125,555,44];
+  const tip= [calcutip(bill[0]),calcutip(bill[1]), calcutip(bill[2])];
+  console.log(tip);
+  const total=[bill[0]+tip[0],bill[1]+tip[1],bill[2]+tip[2]];
+  console.log(bill,tip,total);
+
+  // objects 
+  const aName={
+      firstName:'thanous',
+      secondName:'god of goodness',
+      nickName:'villon',
+      perpose:'kill pain less because people no need to die with hungry'   
+  };
+  console.log(aName.firstName);
+   const myhero=prompt('hai');
+   console.log(aName[myhero]);
+   if (aName[myhero]){
+       console.log('hai');
+   }else{
+       console.log(`hello`);
+   }
+aName.thanous='marvel best character';
+console.log(aName);
+aName.friends=['ultron','loki','redhead'];
+console.log(aName);
+console.log(aName.friends[1]);
+
+// challenge#3
+ const john={
+     fName:'john',
+     mass:78,
+     height:1.69,
+     calcuBmi:function(){
+         this.bmi=this.mass/this.height**2;
+         return this.bmi;
+
+     }
+ }
+ console.log(john.calcuBmi());
+
+ const mark={
+    fName:'john',
+    mass:92,
+    height:1.95,
+    calcuBmi:function(){
+        this.bmi=this.mass/this.height**2;
+        return this.bmi;
+    }
+}
+console.log(mark.calcuBmi());
+
+ if(mark.calcuBmi()<john.calcuBmi()){
+     console.log(`john bmi is greater than markf${john.calcuBmi()}`);
+ }else if(mark.calcuBmi()>john.calcuBmi()){
+     console.log(`john bmi is greater than markf${mark.calcuBmi()}`);
+ }
+ // for loop 
+ for (let hours=1;24>=hours; hours++){
+     console.log(`today we overcome on ${hours} hours`);
+ }
