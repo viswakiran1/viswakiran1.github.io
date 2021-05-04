@@ -202,13 +202,13 @@ console.log(countsn(count[5],count[6]));
       perpose:'kill pain less because people no need to die with hungry'   
   };
   console.log(aName.firstName);
-   const myhero=prompt('hai');
-   console.log(aName[myhero]);
-   if (aName[myhero]){
-       console.log('hai');
-   }else{
-       console.log(`hello`);
-   }
+   //const myhero=prompt('hai');
+   //console.log(aName[myhero]);
+//    if (aName[myhero]){
+//        console.log('hai');
+//    }else{
+//        console.log(`hello`);
+//    }
 aName.thanous='marvel best character';
 console.log(aName);
 aName.friends=['ultron','loki','redhead'];
@@ -248,3 +248,119 @@ console.log(mark.calcuBmi());
  for (let hours=1;24>=hours; hours++){
      console.log(`today we overcome on ${hours} hours`);
  }
+
+ //loop with arrays
+  const bikes=['ns200','rs200','rx100','mt-15','r15'];
+  for (i=0;i<5;i++){
+      console.log(bikes[i]);
+  }
+
+  const states=['andhra','kerala','tamil nadu','panjub'];
+  const datatype=[];
+  for(j=0;j<states.length;j++){
+      console.log(states[j],typeof states[j]);
+      datatype[j]= typeof states[j];
+     
+  }
+ 
+ 
+  console.log(datatype);
+
+const petanimal=['cat','dog','pigeon', 'fishs',5,true];
+const pet=[];
+
+for(let k=0;k<petanimal.length;k++ ){
+
+pet.push(typeof petanimal[k]);
+
+   
+} console.log(pet);
+
+const yeares=[2002,2008,2014,2020];
+const g=[];
+for (m=0; m<yeares.length; m++){
+    g.push(2020-yeares[m]);
+    
+}
+ console.log(g); 
+
+ const brand=['honda','pulsar','yamaha',123,true];
+ for(let i=brand.length;i>-1;i--){
+     console.log(brand[i]);
+ }
+ // loop in loop 
+  const gear=[1,'n',2,3,4,5];
+  for(i=0;i<gear.length;i++){
+      console.log(`we are going gear increment  ${gear[i]} gears upto last gear`);
+      for(clach=0;clach<6;clach++){
+          console.log(`we are use cluch upto ${clach}`)
+      }
+    //   for(reduce=6;reduce>0;reduce--){
+    //       console.log(`we are going reduce gear ${reduce}`)
+    //   }
+  }
+
+  // while loop 
+  var  y=0;
+  while(y<10){
+      console.log(`we going increase numbers ${y}`);
+      y++;
+  }
+
+// math.random the value between 0 to 1 decimal value
+let dice=Math.random()*6
+console.log(dice);
+// math.trunc
+let dices=Math.trunc(Math.random()*6)+1;
+console.log(dices);
+while (dices!==6){
+    console.log(`we roled ${dices}`);
+    dices=Math.trunc(Math.random()*6)+1;
+   
+}
+
+//challenge#1 loops
+const calctip=function(bille){
+    return bille>=50&&bille<=300?bille*015:bille*0.2;
+}
+const billes=[22,295,176,440,37,105,10,1100,86,52];
+const tipes=[];
+const totales=[];
+for (let i=0; i<billes.length;i++){
+    const tipe=calctip(billes[i]);
+    tipes.push(tipe);
+    totales.push(tipe+billes[i]);
+}
+console.log(billes,tipes,totales);
+
+const calage=function(arr){
+    let sum=0;
+    for(let i=0;i<arr.length;i++){
+        sum+=arr[i];
+    }
+    return sum/arr.length;
+}
+console.log(calage([2,3,4]));
+console.log(calage(totales));
+console.log(calage(tipes));
+
+var xy=20;
+if(xy===20)console.log('this equal value');
+
+const temperatures = [3, -2, -6, -1, 'error', 9, 13, 17, 15, 14, 9, 5];
+
+const calcTempAmplitude = function (temps) {
+    let max = temps[0];
+    let min = temps[0];
+    for (let i = 0; i < temps.length; i++) {
+      const curTemp = temps[i];
+      if (typeof curTemp !== 'number') continue;
+      if (curTemp > max) max = curTemp;
+      if (curTemp < min) min = curTemp;
+    }
+    console.log(max, min);
+    return max - min;
+  };
+  const amplitude = calcTempAmplitude(temperatures);
+  console.log(amplitude);
+  
