@@ -348,19 +348,43 @@ var xy=20;
 if(xy===20)console.log('this equal value');
 
 const temperatures = [3, -2, -6, -1, 'error', 9, 13, 17, 15, 14, 9, 5];
+const temperature=[-23,34,45,56,67,78,89]
 
-const calcTempAmplitude = function (temps) {
-    let max = temps[0];
-    let min = temps[0];
-    for (let i = 0; i < temps.length; i++) {
-      const curTemp = temps[i];
-      if (typeof curTemp !== 'number') continue;
-      if (curTemp > max) max = curTemp;
-      if (curTemp < min) min = curTemp;
+function calcultempamplitude(temp){
+    var max=temp[0];
+    var min=temp[0];
+    for(let i=0;i<temp.length;i++ ){
+        const curtemp=temp[i];
+        if(typeof curtemp !== "number")continue;
+        //console.log(curtemp);
+        if(max<curtemp)max=curtemp;
+        if(min>curtemp)min=curtemp;
+
+        
+       
     }
-    console.log(max, min);
-    return max - min;
-  };
-  const amplitude = calcTempAmplitude(temperatures);
-  console.log(amplitude);
-  
+    console.log(max,min);
+    return max-min;
+    
+}
+console.log(calcultempamplitude(temperatures));
+console.log(calcultempamplitude(temperatures.concat(temperature)))
+const arr1=[17,21,23];
+const arr2=[12,5,-5,0,4];
+function printforecast(t3,t4){
+    const t5=t3.concat(t4);
+    return`...${t5[0]} in 1 day ...${t5[1]} in 2 day...${t5[2]} in 3 day...${t5[3]} in 4 day...${t5[4]} in 5 day...${t5[5]} in 6 day...${t5[6]} in 7 day...${t5[7]} in 8 day`
+
+}
+console.log(printforecast(arr1,arr2));
+const data=[17,21,23];
+const data1=[12,5,-5,0,4];
+const data2=data.concat(data1);
+function printfore(table){
+    let str='';
+    for(i=0;i<table.length;i++){
+        str=str+`...${table[i]} in ${i+1}day... `
+    }
+console.log(str)
+}
+console.log(printfore(data2));
