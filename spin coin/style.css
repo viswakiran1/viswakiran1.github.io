@@ -1,0 +1,39 @@
+@import url('https://fonts.googleapis.com/css2?family=Nunito&display=swap');
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body{
+    display: flex;
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+}
+h1{
+    text-align: center;
+}
+
+.coin.hidden{
+ display: none;       
+}
+.coin{
+    margin: 10px;
+    display: flex;
+    text-align: center;
+    align-items: center;
+    justify-content: center;
+    border: 1px black solid;
+    width: 200px;
+    height: 200px;
+    border-radius: 50%;
+   
+    
+}
+.coin.hidden{
+    display: none;
+}
+#display{
+  font-size: 30px;
+}
