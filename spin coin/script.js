@@ -5,60 +5,76 @@ const coinel=document.querySelector(".coin");
 const button=document.querySelector("#button");
 const diplay=document.querySelector("#display");
 const total=document.querySelector("#total");
+
+
+const heads=document.getElementById("heads");
+const spin=document.getElementById("spin");
+spin.addEventListener("click",function(){
+    let coins=Math.trunc(Math.random() * 2) 
+    let coin=["H","T"];
+    console.log(coin[`${coins}`]);
+    setTimeout(() => {
+    document.getElementById("heads").textContent=coin[`${coins}`]
+    document.getElementById("heads").style.fontSize="60px";
+}, 3000),
+
+document.getElementById("show1").textContent = 'Spinning in progress...Wait for 3 seconds'
+setTimeout(() => {
+             document.getElementById('show1').style.display = "none";
+             document.getElementById('show').textContent = 'game is in progress'
+     }, 3000);
+        
+});
 var todo=document.querySelector("#todo");
-var random1=Math.trunc((Math.random()*2)+1);
-    button.addEventListener("click",function(){
-    var random=Math.trunc((Math.random()*2)+1);
-    console.log(typeof random,random);
-    coinel.src=`coin-${random}.png`
-    if(random===1){
-        diplay.textContent="it's head";
-    }else if (random===2){
-        diplay.textContent="it's trails";
-    }
-     })
-     var id = 5;
-function addItem() {
-
-var localvalue = {};
-var i = 0;
-var input = document.getElementById("candidate").value
-var localvalue = {
-'i': i,
-'input': input,
-'bet': bet,
-'choice': choice
-};
-localStorage.setItem(i, JSON.stringify(localvalue));
-console.log(localvalue);
-i++;
-console.log(i);
-
-
-
-var myHero = localStorage.getItem("i");
-console.log(myHero);
-var ul = document.getElementById("dynamic-list");
-console.log(ul);
-var candidate = document.getElementById("candidate");
-var li = document.createElement("li");
-var span = document.createElement("span");
-var button = document.createElement("button");
-button.setAttribute('onclick',"removeItem("+id+")");
-button.setAttribute('class',"btn btn-remove"); 
-button.setAttribute('type',"button");
-button.appendChild(document.createTextNode("Remove item"));
-li.setAttribute('id',id);
-li.appendChild(document.createTextNode(candidate.value));
-li.appendChild(span);
-span.appendChild(button);
-ul.appendChild(li);
-id++;
-}
-
-function removeItem(id){
-var ul = document.getElementById("dynamic-list");
-var li = document.getElementById(id);
-ul.removeChild(li);
+var bet=document.querySelector("#bet");
+var choose=document.querySelector("#selecters");
+var additems=document.querySelector("#submit");
+var items=JSON.parse(localStorage.getItem("heads or tails")) || [];
+additems.addEventListener("click",function(){
+    additems()
+function selectitems(){
 
 }
+
+function additems(){
+    var  item=todo.value;
+    var  item1=bet.value;
+    var  item2=choose.value;
+    if(item===""){
+        return document.querySelector("#empty").textContent="you need to enter  name ";
+    }items.push({
+      todo: item,
+      bet: item1,
+      choose: item2
+       
+    })
+    localStorage.setItem('todo-list',JSON.stringify(items));
+    listItems();
+    todo.value="";
+
+ }
+ function deleteItem(index){
+     items.splice(index,1);
+     localStorage.setItem('todo-list', JSON.stringify(items))
+         listItems();
+ }
+ function markAsDone(index) {
+     items[index].done = !items[index].done;
+     localStorage.setItem('todo-list', JSON.stringify(items));
+     listItems();
+ }
+ function listItems() {
+     var list = "";
+     for (var i = 0; i < items.length; i++) {
+         list += "<li>";
+         list += items[i].value + " ";
+        list += "<small title='click me to mark as done' class='label' onclick='markAsDone(" + i + ")'>" + items[i].time + "</small> ";
+         list += "<span class='label label-1 alert' onclick='deleteItem(" + i + ")'>Remove</span></li>";
+
+     }
+     document.querySelector("#list-items").innerHTML = list;
+ }
+ (function() {
+     listItems();
+ })();
+});

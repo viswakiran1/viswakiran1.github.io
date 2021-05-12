@@ -11,25 +11,38 @@
 </head>
 <body>
     <header>
-        <h1>spin coin</h1>
+        <div id="again">
+            <a href="#"id="new" >start new</a>
+        </div>
+        <div id="winner">
+            <h2>winner</h2>
+            <p id="show" >contest not started yet</p>
+        </div>
         <div class="coin1">
-        <img src="coin-2.png" class="coin">
-        <button id="button">spin coin </button><br>
-        <span id="display"><b></b></span>
+            <p id="heads">Heads<br>(or)<br>Tails</p>
+            <button id="spin">spin</button>
+            <p id="show1"></p>
+       
+       <!-- <span id="display"><b></b></span>
         <p id="total"></p>
-    </div><br>
+    </div><br>-->
     </header>
     <main>
-        <form>
+        <form id="form">
         <input type="text" placeholder="player name" id="todo">
-        <input type="number" placeholder="bet">
-        <select id="select"> 
+        <input type="number" placeholder="bet" id="bet">
+        <select id="select" id="selecters">  
             <option value="head">head</option>
             <option value="tail">tail</option>
         </select>
         <input type="submit" placeholder="submit" id="submit">
         <p id="empty"></p>
+        <p id="list-items"></p>
     </form>
+    <div id="currentbet">
+        <h2>current bet</h2>
+        <p id="bet">not bets betted yet</p>
+    </div>
     </main>
    
    
