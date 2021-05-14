@@ -13,10 +13,17 @@ const listAdd = document.querySelector('.list-add')
 
 var currentBet = 0;
 var currentBet1 = 0;
+
 var totalMoney = 0;
 var wonMoney = 0;
+
 var headorTailsSpinEl;
 
+
+// const headorTailsSpinEl = Math.trunc(Math.random() * 2) + 1;
+
+
+// 
 spinButton.addEventListener('click', () => {
     let coin = ['H', 'T'];
     headorTailsSpinEl = Math.trunc(Math.random() * 2);
@@ -112,14 +119,15 @@ function winner() {
             document.getElementById('contest').innerHTML = ''
             document.getElementById('list').innerHTML = ''
             const add = document.createElement('li')
-            add.innerHTML = `${playerName.value} , ${totalMoney += currentBet * 2} Won(${wonMoney += currentBet})`
+            add.innerHTML = `${playerName} , ${totalMoney += currentBet * 2} Won(${wonMoney += currentBet})`
             document.getElementById('contest').appendChild(add);
 
         } else if (headorTailsSpinEl === 1) {
+            // document.getElementById('winner-contest').innerHTML = 'no bets added yet'
             document.getElementById('contest').innerHTML = ''
             document.getElementById('list').innerHTML = ''
             const add = document.createElement('li')
-            add.innerHTML = `${playerName.value} , ${totalMoney += currentBet1 * 2} Won(${wonMoney += currentBet1})`
+            add.innerHTML = `${playerName} , ${totalMoney += currentBet1 * 2} Won(${wonMoney += currentBet1})`
             document.getElementById('contest').appendChild(add);
         }
     }, 3)
