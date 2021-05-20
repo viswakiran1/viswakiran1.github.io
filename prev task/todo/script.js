@@ -5,29 +5,29 @@ let addtaskbtn = document.getElementById("btn");
 addtaskbtn.addEventListener("click", function(){
     addtaskinputval = addtaskinput.value;
     if(addtaskinputval.trim()!=0){
-        let webtask = localStorage.getItem("localtask");
-        if(webtask == null){
+        let task = localStorage.getItem("todo");
+        if(task == null){
                 taskObj = [];
         }
         else{
-            taskObj = JSON.parse(webtask);
+            taskObj = JSON.parse(task);
         }
         taskObj.push(addtaskinputval);
-        localStorage.setItem("localtask", JSON.stringify(taskObj));  
+        localStorage.setItem("todo", JSON.stringify(taskObj));  
     }
     showtask();
 })
 
 function showtask(){
-    let webtask = localStorage.getItem("localtask");
-    if(webtask == null){
+    let task = localStorage.getItem("todo");
+    if(task == null){
             taskObj = [];
     }
     else{
-        taskObj = JSON.parse(webtask);
+        taskObj = JSON.parse(task);
     }
     let html = '';
-    let addedtasklist = document.getElementById("addedtasklist");
+    let addedtasklist = document.getElementById("list");
     taskObj.forEach((item, index) => {
         html += `<tr>
                     <th scope="row">${index+1}</th>
@@ -41,11 +41,11 @@ function showtask(){
 }
 
 
-// deleteitem
+
 function deleteitem(index){
-    let webtask = localStorage.getItem("localtask");
-    let taskObj = JSON.parse(webtask);
+    let task = localStorage.getItem("todo");
+    let taskObj = JSON.parse(task);
     taskObj.splice(index, 1);
-    localStorage.setItem("localtask", JSON.stringify(taskObj));
+    localStorage.setItem("todo", JSON.stringify(taskObj));
     showtask();
 }
