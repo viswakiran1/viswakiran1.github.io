@@ -402,128 +402,128 @@ margin-right: 10px;
 .toolcontent1{
     display: flex;
 }
-.tool1{
+.Attractive{
     width: 30%;
     padding: 20px;
 }
-.tool1 i{
+.Attractive i{
     font-size: 50px;
     margin-left: 40px;
     margin-bottom: 10px;
 }
-.tool1 h4{
+.Attractive h4{
     margin-bottom: 10px;
 }
-.tool1 p{
+.Attractive p{
     margin-bottom: 10px;
     line-height: 30px;
 }
-.link1{
+.more1{
     text-decoration: none;
 }
 
-.tool2{
+.Reliable{
     width: 30%;
     padding: 20px;
 }
-.tool2 i{
+.Reliable i{
     font-size: 50px;
     margin-left: 40px;
     margin-bottom: 10px;
 }
-.tool2 h4{
+.Reliable h4{
     margin-bottom: 10px;
 }
-.tool2 p{
+.Reliable p{
     margin-bottom: 35px;
     line-height: 25px;
 }
-.link2{
+.more2{
    margin-top: 100px;
     text-decoration: none;
 }
 
-.tool3{
+.Complimentary{
     width: 30%;
     padding: 20px;
 }
-.tool3 i{
+.Complimentary i{
     font-size: 50px;
     margin-left: 40px;
     margin-bottom: 10px;
 }
-.tool3 h4{
+.Complimentary h4{
     margin-bottom: 10px;
 }
-.tool3 p{
+.Complimentary p{
     margin-bottom: 10px;
     line-height: 25px;
 }
-.link3{
+.more3{
     text-decoration: none;
 }
 .toolcontent2{
     display: flex;
 }
 
-.tool4{
+.Great{
     width: 30%;
     padding: 20px;
 }
-.tool4 i{
+.Great i{
     font-size: 50px;
     margin-left: 40px;
     margin-bottom: 10px;
 }
-.tool4 h4{
+.Great h4{
     margin-bottom: 10px;
 }
-.tool4 p{
+.Great p{
     margin-bottom: 50px;
     line-height: 25px;
 }
-.link4{
+.more4{
     text-decoration: none;
 }
 
-.tool5{
+.Campaign{
     width: 30%;
     padding: 20px;
 }
-.tool5 i{
+.Campaign i{
     font-size: 50px;
     margin-left: 40px;
     margin-bottom: 10px;
 }
-.tool5 h4{
+.Campaign h4{
     margin-bottom: 10px;
 }
-.tool5 p{
+.Campaign p{
     margin-bottom: 35px;
     line-height: 25px;
 }
-.link5{
+.more5{
    margin-top: 85px;
     text-decoration: none;
 }
 
-.tool6{
+.Custom{
     width: 30%;
     padding: 20px;
 }
-.tool6 i{
+.Custom i{
     font-size: 50px;
     margin-left: 40px;
     margin-bottom: 10px;
 }
-.tool6 h4{
+.Custom h4{
     margin-bottom: 10px;
 }
-.tool6 p{
+.Custom p{
     margin-bottom: 50px;
     line-height: 25px;
 }
-.link6{
+.more6{
     text-decoration: none;
 }
 .sitecontent{
@@ -533,7 +533,7 @@ margin-right: 10px;
     padding: 80px;
 }
 .sitecontent h4{
-    font-size: 45px;
+    /* font-size: 45px; */
     text-align: center;
     margin-bottom: 20px;
 }
@@ -548,6 +548,10 @@ margin-right: 10px;
     border: 0;
     border-radius: 3px;
 }
+.sitecontent button a{
+    text-decoration: none;
+    color: black;
+}
 .footersection{
     background-color: #333231;
     color: #fff;
@@ -558,10 +562,10 @@ margin-right: 10px;
     padding: 80px;
     
 }
-.footertext1{
+.HOSTING{
     width: 25%;
 }
-.footertext1 h5{
+.HOSTING h5{
     color:#999999;
     margin-bottom: 10px;
 }
@@ -577,11 +581,11 @@ margin-right: 10px;
     color:#fff;
 }
 
-.footertext2{
+.USEFUL{
     width: 25%;
 }
 
-.footertext2 h5{
+.USEFUL h5{
     color:#999999;
     margin-bottom: 10px;
 }
