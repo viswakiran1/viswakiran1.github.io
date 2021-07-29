@@ -328,14 +328,16 @@ margin-right: 10px;
     margin-bottom: 20px;
     
 }
-/* 
+
 .list2{
     display: flex;
     margin-left: -50px;
-} */
+} 
 .tower{
     height: 60px;
     width: 60px;
+    margin-right: 10px;
+    margin-top: 10px;
 }
 
 
@@ -348,6 +350,17 @@ margin-right: 10px;
     line-height: 20px;
     margin-bottom: 5px;
     margin-bottom: 20px
+}
+    
+.list3{
+    display: flex;
+    margin-left: -50px;
+}
+.cpu{
+    height: 60px;
+    width: 60px;
+    margin-right: 10px;
+    margin-top: 10px;  
 }
 .list3 h3{
     color:#CDAA72 ;
