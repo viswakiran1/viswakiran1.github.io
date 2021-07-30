@@ -170,7 +170,7 @@ body {
 .learn{
     margin-top: 40px;
 }
-.learn a{
+.learn{
     padding: 10px 25px;
     background-color: transparent;
     color: black;
@@ -526,13 +526,16 @@ margin-right: 10px;
 .more6{
     text-decoration: none;
 }
+.sitesection{
+    text-align: center;
+}
 .sitecontent{
     background-image: url(./img/orange.jpg);
     width: 100%;
     color: #fff;
     padding: 80px;
 }
-.sitecontent h4{
+.sitecontent h2{
     /* font-size: 45px; */
     text-align: center;
     margin-bottom: 20px;
@@ -548,9 +551,13 @@ margin-right: 10px;
     border: 0;
     border-radius: 3px;
 }
-.sitecontent button a{
+.sitecontent a{
     text-decoration: none;
     color: black;
+    padding: 10px 25px;
+    background-color: #fff;
+    border-radius: 5px;
+    
 }
 .footersection{
     background-color: #333231;
@@ -749,10 +756,15 @@ margin-right: 10px;
 .uk:active,
 .uk:focus{
     outline: none;
-    
+    color: #000;
+    background: #488f8f repeat url("data:image/gif;base64,R0lGO...");
 }
 .uk{
     color: #fff;
+}
+option:checked, option:hover {
+    color: #000;
+    background: #488f8f repeat url("data:image/gif;base64,R0lGO...");
 }
 
 span::before{
