@@ -1,0 +1,128 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;1,300;1,500;1,700&display=swap');
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    overflow: hidden;
+}
+
+body {
+    width: 100%;
+    height: 100%;
+    font-family: 'Roboto','sans-serif';
+}
+
+ .navbar{
+     display: flex;
+     background-color: #2A2928;
+     padding: 20px 40px;
+ }
+ .logo{
+     height: 50px;
+     width: 300px;
+ }
+ .navlist{
+    display: inline-flex;
+    flex-wrap: wrap;
+    gap: 50px;
+    padding: 30px 0 0 30px;
+   
+ }
+ .navlist li a{
+    list-style: none;
+    text-decoration: none;
+    color: #fff;
+ }
+ .login i{
+     color:#727171;
+ }
+.login{
+    margin-left: auto;
+    text-decoration: none;
+    color: #fff;
+    padding: 30px 100px 0 0;
+}
+.heading-section{
+    background-image: url(./img/background.png),url(./img/lin.png),url(./img/orange.jpg);
+    padding: 40px;
+    background-repeat: no-repeat, no-repeat,repeat;
+    background-position: right bottom, center;
+    text-align: center;
+    height:300px;
+    color: #fff;
+}
+.heading-section h1{
+    padding-bottom: 30px;
+}
+.heading-section p { 
+    padding-bottom: 30px;
+}
+.heading-section a{
+    padding: 10px 30px;
+    background-color: #fff;
+    color:#000;
+    text-decoration: none;
+    border-radius: 5px;
+  
+}
+.sales-section{
+    display: flex;
+    justify-content: space-around;
+    padding: 20px;
+}
+.maintext::before{
+    content: '';
+    display: block; 
+    background-color: #CDAA72;
+    height: 3px;
+    width: 100px;
+    margin: 10px 0; 
+}
+.maintext h2{
+    margin-bottom: 30px;
+}
+.maintext p{
+max-width: 500px;
+line-height: 20px;
+margin-bottom: 40px;
+}
+.maintext a{
+  
+    text-decoration: none;
+    padding: 10px 30px;
+    border: 1px #6D6D6D solid;
+    color: black;
+    border-radius: 3px;
+}
+.salefirst{
+    padding:20px 30px;
+    background-color:#E5B22D;
+    border-radius: 5px;
+    margin-bottom: 5px;
+    color: #fff;
+}
+
+.salesecond{
+    padding:20px 60px;
+    background-color: #EE972B;
+    border-radius: 5px;
+    margin-bottom: 5px;
+    color: #fff;
+}
+
+.salethird{
+    padding:20px 30px;
+    background-color: #F47B44;
+    border-radius: 5px;
+    margin-bottom: 5px;
+    color: #fff;
+}
+
+.salefour{
+    padding:20px 30px;
+    background-color: #B35328;
+    border-radius: 5px;
+    margin-bottom: 5px;
+    color: #fff;
+}
+.laptopimage
